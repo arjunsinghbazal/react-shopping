@@ -44,7 +44,7 @@ const Signup = () => {
         <input className="items" type="email" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} />
         <input className="items" onChange={(e) => setPassword(e.target.value)} type="password" placeholder="Password" value={password} />
         <input className="items" onChange={(e) => setConfirmPassword(e.target.value)} type="password" placeholder="Confirm Password" value={confirmPassword} />
-        <p className={message.includes("Error") ? "red" : "green"}>{message}</p>
+        <p className={message.includes("Error") ? "red" : "Green"}>{message}</p>
         <div className="form-buttons">
           <button className="btn submit-btn decoration" type="submit">Signup</button>
           <Link className="btn submit-btn decoration" to="/">Back</Link>

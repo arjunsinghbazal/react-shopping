@@ -33,7 +33,7 @@ return(
       <h1>Login</h1>
       <input className="items" type="email" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} />
       <input className="items" onChange={(e) => setPassword(e.target.value)} type="password" placeholder="Password" value={password} />
-      <p className={message.includes("Error") ? "red" : "green"}>{message}</p>
+      <p className={message.includes("Error") ? "red" : "Green"}>{message}</p>
       <div className="form-buttons">
           <button className="btn submit-btn decoration" type="submit">Login</button>
           <Link className="btn submit-btn decoration" to="/signup">Back</Link>
