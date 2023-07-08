@@ -5,9 +5,279 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  overflow-x: hidden;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* ////landing page */
+.NavContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  background-color: rgb(173, 164, 164);
+}
+.NavItem{
+  font-weight:bolder;
+  font-size:larger;
+  color: blue;
+}
+.NavItem1{
+  padding-right: 3rem;
+}
+.NavItem1:hover{
+  color: blue;
+  font-weight: bold;
+}
+.ImageSec{
+  width: 100vw;
+  height: 80vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 0.5rem 1rem;
+}
+
+.imageItem{
+  width: 20%;
+  font-weight: 500;
+  font-size: 1.7rem;
+  padding-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.ImageSec img{
+  width: 40%;
+}
+.blue{
+  color: blue;
+}
+.flex{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.btn{
+  border: none;
+  width: 60px;
+  padding: 0.5rem 1rem;
+  background-color: blue;
+  color:white;
+}
+
+.btn:hover{
+background-color:grey;
+color: black;
+}
+
+/* Signup page */
+
+.form{
+color: black;
+background-color: white;
+display: flex;
+flex-direction: column;
+gap: 10px;
+padding: 0rem 2rem;
+height: auto;
+}
+.form h1{
+  color: blue;
+}
+.items{
+  color:black;
+  background-color: white;
+  border: none;
+  padding: 0.5rem 0rem;
+  border-bottom: 1px solid rgb(23, 22, 22);
+  
+}
+input:focus {
+  outline: none;
+}
+
+.form .submitbtn{
+  border: none;
+}
+.red{
+  color: red;
+}
+.green{
+  color:green;
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+.decoration {
+  text-decoration: none;
+}
+
+/* ///mart page */
+
+.data{
+  margin:0 1rem;
+}
+.heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.itemMart{
+  width: 96vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.one{
+  width: 14%;
+  height: 250px;
+  padding: 0.3rem;
+  box-shadow: 0.3rem 0.3rem 0.3rem 0.3rem grey;
+}
+
+.one img{
+  width: 100%;
+  height: 40%;
+}
+.title {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.one .two{
+  width: 100%;
+  height:50%;
+  padding-top: 0.4rem;
+}
+.btnMart{
+  width: 100%;
+  padding: 0.5rem;
+  background-color: red;
+  color: white;
+  border: none;
+}
+.search{
+padding: 0.5rem;
+margin-left: 0.5rem;
+}
+
+.inputSearch{
+  width: 400px;
+}
+
+.btnMart:hover{
+  background-color: blue;
+  color: white;
+}
+
+.green{
+  background-color: green;
+}
+
+/* ////cart  */
+.cartContainer{
+  margin-top: 6%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+ 
+}
+.cartImage{
+  width: 20%;
+}
+.cartflex{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.pay{
+  margin-left: 0.5rem;
+  margin-top: 1.2rem;
+  padding: 0.4rem;
+  border: none;
+  background-color: blue;
+  color: white;
+}
+.pay:hover{
+  background-color: rgb(119, 234, 74);
+}
+.itemCart{
+  display: flex;
+  flex-wrap: wrap;
+  width: 60%;
+  gap: 1rem;
+}
+.itemCart2{
+  padding: 0.5rem;
+  box-shadow: 0.3rem 0.4rem 0.4rem 0.3rem rgb(146, 146, 156);
+  width: 160px;
+  max-height: 80px;
+}
+
+
+
+/* Mobile devices */
+@media screen and (max-width: 767px) {
+  /* Modify styles for mobile devices */
+  .ImageSec {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+  .imageItem {
+    width: 100%;
+    padding-top: 2rem;
+  }
+  .ImageSec img {
+    width: 70%;
+  }
+  .form {
+    padding: 0rem 1rem;
+  }
+  .itemMart {
+    width: 100%;
+  }
+  .one {
+    width: 45%;
+  }
+}
+
+/* Tablets and small desktops */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  /* Modify styles for tablets and small desktops */
+  .ImageSec img {
+    width: 60%;
+  }
+  .one {
+    width: 30%;
+  }
+}
+
+/* Large desktops and beyond */
+@media screen and (min-width: 1024px) {
+  /* Modify styles for large desktops */
+  .ImageSec {
+    height: 80vh;
+  }
+  .imageItem {
+    padding-top: 4rem;
+  }
+  .ImageSec img {
+    width: 40%;
+  }
+  .one {
+    width: 14%;
+  }
 }
